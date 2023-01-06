@@ -1,0 +1,17 @@
+{
+  "name": "sign",
+  "version": "1.0.0",
+  "description": "掘金自动每日签到，免费抽奖",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node main.js",
+    "start": "pm2 start main.js --name juejin_auto_sign",
+    "stop": "pm2 stop juejin_auto_sign",
+    "delete": "pm2 delete all"
+  },
+  "dependencies": {
+    "axios": "^1.2.2",
+    "cron": "^2.1.0"
+  }
+}
